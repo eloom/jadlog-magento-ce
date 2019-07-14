@@ -1,6 +1,6 @@
 # Jadlog Frete para Magento
 
-Integração com sistema de fretes da Jadlog através do sistema [Getmodal](http://www.getmodal.com.br).
+Integração com sistema de fretes da Jadlog Brasil através do sistema [Getmodal](http://www.getmodal.com.br).
 
 ## Recursos
 
