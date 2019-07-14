@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Modulo Jadlog Carrier" basedir=".">
+	<property file="${basedir}/build.properties"/>
+
+	<echo>--------------------------------Modulo EloomJadlog--------------------------------</echo>
+
+	<target name="instalar">
+		<ant antfile="build.xml" target="_copiar-modulo">
+			<property name="ambiente" value="${ambiente}"/>
+			<property name="diretorios" value="${diretorios.EloomJadlog}"/>
+			<property name="arquivos" value="${arquivos.EloomJadlog}"/>
+		</ant>
+	</target>
+
+	<target name="remover">
+		<ant antfile="build.xml" target="_remover-modulo-publicado">
+			<property name="ambiente" value="${ambiente}"/>
+			<property name="diretorios" value="${diretorios.EloomJadlog}"/>
+			<property name="arquivos" value="${arquivos.EloomJadlog}"/>
+		</ant>
+	</target>
+
+	<target name="_preparar-pacote">
+		<ant antfile="build.xml" target="_remover-modulo-publicado">
+			<property name="ambiente" value="${ambiente}"/>
+			<property name="diretorios" value="${diretorios.EloomJadlog}"/>
+			<property name="arquivos" value="${arquivos.EloomJadlog}"/>
+		</ant>
+
+		<ant antfile="build.xml" target="_copiar-modulo">
+			<property name="ambiente" value="${ambiente}"/>
+			<property name="diretorios" value="${diretorios.EloomJadlog}"/>
+			<property name="arquivos" value="${arquivos.EloomJadlog}"/>
+		</ant>
+	</target>
+
+	<target name="_pre-instalar-modulo">
+
+	</target>
+
+	<target name="_compactar-todos-js-css">
+		<ant antfile="build.xml" target="_compactar-todos-js-css">
+			<property name="ambiente" value="${ambiente}"/>
+			<property name="arquivos" value="${compactar.EloomJadlog}"/>
+		</ant>
+	</target>
+</project>

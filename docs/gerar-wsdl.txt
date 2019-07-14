@@ -1,0 +1,4 @@
+# Cotação
+php wsdl2phpgenerator-2.5.5.phar -i http://www.jadlog.com.br:8080/JadlogEdiWs/services/ValorFreteBean?wsdl -o /tmp/jadlog/wsdl
+
+php wsdl2phpgenerator-2.5.5.phar -i http://www.jadlog.com.br:8080/JadlogEdiWs/services/TrackingBean?wsdl -o /tmp/jadlog/wsdl
