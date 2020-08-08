@@ -2,7 +2,7 @@
 <project name="eloom" basedir=".">
   <property file="${basedir}/build.properties" />
   <property file="${basedir}/build-${ambiente}.properties" />
-  <property file="${basedir}/ioncube/licenca.properties" />
+  <property file="${basedir}/licenca.properties" />
     
   <property name="compilacao" value="${basedir}/compilacao" />
     
